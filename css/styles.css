@@ -32,9 +32,16 @@ header {
     align-content: center;
 }
 
-.header-text-container {
+.vertical-container {
     display: flex;
     flex-direction: column;
+}
+
+.horizontal-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    width: 100%;
 }
 
 header h1 {
@@ -56,4 +63,15 @@ header h2 {
     background-color: var(--light-grey);
     height: 2px;
     width: 100%;
+}
+
+/* Repositories */
+
+section {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
 }
