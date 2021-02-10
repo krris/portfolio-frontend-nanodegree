@@ -113,6 +113,11 @@ section {
     flex-direction: column;
 }
 
+footer {
+    font-size: 0.8em;
+    margin-top: 2em;
+}
+
 @media screen and (max-width: 840px) {
     .box {
         flex: 0 0 100%;
