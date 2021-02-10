@@ -1,3 +1,5 @@
+
+
 :root {
     --blue: #02b3e4;
     --dark-grey: #2d3c49;
@@ -6,6 +8,8 @@
 
 body {
     font-family: -apple-system, Helvetica, Arial, sans-serif;
+    padding-left: 5em;
+    padding-right: 5em;
 }
 
 .image {
@@ -39,7 +43,6 @@ header {
 
 .horizontal-container {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-flow: row wrap;
     width: 100%;
 }
@@ -63,9 +66,11 @@ header h2 {
     background-color: var(--light-grey);
     height: 2px;
     width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
-/* Repositories */
+/* Content */
 
 section {
     width: 100%;
@@ -73,5 +78,73 @@ section {
 
 .hero img {
     width: 100%;
+}
+
+.featured-title {
+    width: 100%;
+    font-size: 2.4em;
+    font-weight: 500;
+    color: var(--light-grey);
+}
+
+.boxes {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: -10px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 40%;
+    margin: 10px;
+}
+
+.box img {
+    width: 100%;
     height: auto;
+}
+
+.box-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 840px) {
+    .box {
+        flex: 0 0 100%;
+    }
+    body {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .boxes {
+        justify-content: space-evenly;
+    }
+    .box {
+        flex: 1 0 30%;
+    }
+    body {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .boxes {
+        justify-content: space-evenly;
+    }
+    .box {
+        flex: 1 0 30%;
+    }
+    body {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
